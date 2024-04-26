@@ -1,75 +1,29 @@
-# Nuxt 3 Minimal Starter
+# shurl-nuxt3-supabase
+A Simple and responsive URL shortener created using Nuxt3, Supabase and TailwindCSS.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+I have a demo video of this project in this [link](https://youtu.be/J1OWqJ_fdfU)
 
-## Setup
+# Technologies Used
+* **Typescript**
+* **Nuxt3**
+* **Supabase**
+* **TailwindCSS**
 
-Make sure to install the dependencies:
+# Features
+Github and email/password authentication via supabase authentication.  
+Data storage using supabase.  
+Supabase function and trigger in click count.  
+Home page.  
+Dashboard.  
+Link details page.  
+IP Geolocation using `https://ipgeolocation.io`.  
+`ipify.org` for getting IP address on the client side.  
+URL shortener.
 
-```bash
-# npm
-npm install
+# Testing this project
+If you wanna test this project, You need to add these environment variables:
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+**SUPABASE_URL** -> go to your supabase project and then `Project Settings->API->Project URL`  
+**SUPABASE_KEY** -> go to your supabase project and then `Project Settings->API->Project API Keys` and then get the first key not the key with 'secret' tag.  
+**BASE_URL** -> Base URL e.g. `http://example.com`.  
+**IP_GELOCATION_API_KEY** -> go to `https://ipgeolocation.io` then go to dashboard and get the API key there.
