@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+body::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: fixed;
+  z-index: -10;
+
+  /*
+   100% is the ellipse's x-radius
+   75% is the ellipse's y-radius
+   50% is the ellipse's centerpoint x-position
+   60% is the ellipse's centerpoint y-position
+   colors starts from the ellipse's center to the
+   furthest part of ellipse.
+
+   Make the first color 0.15 opaque.
+   The 10% after the color represents the distance of the color to the gradient's
+   center or ellipse's center. A distance of 0 means that the color is concentrated
+   at the center. A distance of 100% means that the color is concentrated at the
+   furthest part of the circle's center.
+
+   Make the last color fully transparent to achieve a faint color at the center.
+  */
+  background: radial-gradient(50% 74.55% at 50% 20%, rgba(174, 9, 180, 0.17) 10%, rgba(174, 9, 180, 0.05) 100%);
+}
+
+.container {
+  @apply md:w-[90%] mx-auto;
+}
+
+.btn-color-primary {
+  @apply bg-amber-400 text-amber-800;
+}
+
+.card-color-primary {
+  @apply shadow-md rounded-lg bg-yellow-400/10 border border-white/15;
+}
+
